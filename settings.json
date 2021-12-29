@@ -1,0 +1,605 @@
+{
+  // general
+  "editor.fontFamily": "Fira Code,FiraCode Nerd Font,codicon",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.fontLigatures": true,
+  "editor.cursorSurroundingLines": 5,
+  "editor.cursorWidth": 5,
+  "editor.cursorBlinking": "solid",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.renderLineHighlight": "all",
+  "editor.foldingStrategy": "auto",
+  "editor.minimap.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.matchBrackets": "always",
+  "editor.formatOnType": true,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.guides.bracketPairs": true,
+  "editor.codeActionsOnSave": {
+    "source.sortImports": true,
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
+  "eslint.codeActionsOnSave.rules": [],
+  "editor.wordWrapColumn": 120, // 设置编辑器最大列为120
+  "editor.rulers": [
+    120
+  ],
+  "editor.quickSuggestions": {
+    "comments": true,
+    "other": true,
+    "strings": true
+  },
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "editor.snippetSuggestions": "inline",
+  "editor.suggest.localityBonus": true,
+  // "editor.suggest.preview": true,
+  "editor.inlineSuggest.enabled": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // 文件
+  "files.simpleDialog.enable": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/dist/*/**": true
+  },
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.commandPalette.history": 5,
+  "workbench.enableExperiments": false,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.view.alwaysShowHeaderActions": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.wrapTabs": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f",
+  },
+  "window.dialogStyle": "custom",
+  "window.restoreFullscreen": true,
+  "window.doubleClickIconToClose": true,
+  // 导航路径
+  "breadcrumbs.filePath": "last",
+  "breadcrumbs.symbolPath": "last",
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideTabs": false,
+  "zenMode.restore": false,
+  "zenMode.fullScreen": false,
+  // 文件资源管理器
+  "explorer.compactFolders": false,
+  "explorer.incrementalNaming": "smart",
+  "explorer.copyRelativePathSeparator": "/",
+  // 搜索
+  "search.exclude": {
+    "**/dist": true,
+    "**/miniprogram_npm": true,
+    "**/node_modules": true
+  },
+  "search.followSymlinks": false,
+  // Git
+  "scm.alwaysShowRepositories": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  // "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.advanced.messages": {
+    "suppressGitDisabledWarning": true,
+    "suppressGitMissingWarning": true
+  },
+  // terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.4,
+  // 将大部分键绑定调度到终端而不是工作台
+  "terminal.integrated.sendKeybindingsToShell": false,
+  "terminal.integrated.copyOnSelection": true,
+  // ================= 扩展设置 =================
+  // emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.optimizeStylesheetParsing": false,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.syntaxProfiles": {
+    "html": {
+      // "filters": "bem"
+    }
+  },
+  "emmet.preferences": {
+    "bem.elementSeparator": "__",
+    "bem.modifierSeparator": "_"
+  },
+  // scss编译
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.showOutputWindowOn": "Error",
+  "liveSassCompile.settings.formats": [
+    // This is Default.
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**",
+    "/.vscode/**"
+  ],
+  // css rem
+  "cssrem.wxss": true,
+  "cssrem.wxssDeviceWidth": 750,
+  "cssrem.wxssScreenWidth": 750,
+  // 路径提示
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src",
+    "~@": "${folder}/src",
+  },
+  // prettier
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.vueIndentScriptAndStyle": true,
+  "prettier.trailingComma": "all",
+  // "minapp-vscode.wxmlFormatter": "prettier",
+  "minapp-vscode.styleExtensions": [
+    "scss",
+    "wxss"
+  ],
+  "minapp-vscode.decorateComplexInterpolation": false,
+  "minapp-vscode.disableDecorate": true,
+  "minapp-vscode.disableAutoConfig": true,
+  "minapp-vscode.formatMaxLineCharacters": 120,
+  "minapp-vscode.globalStyleFiles": [
+    "app.wxss"
+  ],
+  "minapp-vscode.snippets": {
+    "wxml": {
+      "open-data": {
+        "body": "<open-data type=\"${1|groupName,userNickName,userAvatarUrl,userGender,userCity,userProvince,userCountry,userLanguage|}\" lang=\"${2|en,zh_CN,zh_TW|}\" />$0"
+      }
+    },
+    "pug": {
+      "open-data": {
+        "body": "open-data(type=\"${1|groupName,userNickName,userAvatarUrl,userGender,userCity,userProvince,userCountry,userLanguage|}\" lang=\"${2|en,zh_CN,zh_TW|}\")$0"
+      }
+    }
+  },
+  // -------------------- langule --------------------
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.foldingStrategy": "auto"
+  },
+  // "volar.codeLens.scriptSetupTools": true,
+  // "volar.icon.finder": true,
+  // "volar.icon.preview": true,
+  "vetur.useWorkspaceDependencies": true,
+  "vite.autoStart": false,
+  "vite.https": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.foldingStrategy": "indentation"
+  },
+  // "javascript.inlayHints.parameterNames.enabled": "literals",
+  // "javascript.inlayHints.enumMemberValues.enabled": true,
+  // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "javascript.inlayHints.parameterTypes.enabled": true,
+  // "javascript.inlayHints.variableTypes.enabled": true,
+  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "typescript.inlayHints.parameterNames.enabled": "literals",
+  // "typescript.inlayHints.enumMemberValues.enabled": true,
+  // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "typescript.inlayHints.parameterTypes.enabled": true,
+  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "typescript.inlayHints.variableTypes.enabled": true,
+  // "javascript.referencesCodeLens.enabled": true,
+  // "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.locale": "zh-CN",
+  "typescript.suggest.completeFunctionCalls": true,
+  "[markdown]": {
+    "editor.quickSuggestions": false,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "markdown.preview.breaks": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "json.schemas": [
+    {
+      "description": "project.config.json",
+      "fileMatch": [
+        "project.config.json"
+      ],
+      "url": "https://newfuture.github.io/miniprogram-json-schema/project.config.json",
+    },
+    {
+      "description": "page.json",
+      "fileMatch": [
+        "page.json"
+      ],
+      "url": "https://newfuture.github.io/miniprogram-json-schema/page.json",
+    },
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "html.format.templating": true,
+  "html.validate.scripts": false,
+  "html.validate.styles": false,
+  "[html]": {
+    "editor.foldingStrategy": "auto",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "[wxml]": {
+    "editor.foldingStrategy": "auto"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "Lua.completion.callSnippet": "Both",
+  "Lua.telemetry.enable": false,
+  // todo
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "todo-tree.regex.regexCaseSensitive": false,
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules",
+    "**/dist"
+  ],
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+  ],
+  "telemetry.telemetryLevel": "off",
+  "svn.sourceControl.ignore": [
+    "/node_modules/*",
+    "/node_modules",
+    "/miniprogram_npm/*",
+    "/miniprogram_npm",
+    "/.git",
+    "/.git/*",
+    "/feimeibj打包/*",
+    "/feimeibj打包"
+  ],
+  "svn.multipleFolders.ignore": [
+    "/node_modules/*",
+    "/node_modules",
+    "/miniprogram_npm/*",
+    "/miniprogram_npm",
+    "/.git",
+    "/.git/*",
+    "/feimeibj打包/*",
+    "/feimeibj打包"
+  ],
+  // LeetCode
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  // console
+  "projectManager.groupList": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "zenMode.hideLineNumbers": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  // -------------------- keybindings --------------------
+  // vim
+  "vim.debug.silent": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.changeWordIncludesWhitespace": false,
+  "vim.easymotion": true,
+  "vim.foldfix": true,
+  "vim.highlightedyank.color": "#AE5500",
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.ignorecase": false,
+  "vim.leader": " ",
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/opt/local/bin/nvim",
+  "vim.overrideCopy": false,
+  "vim.replaceWithRegister": true,
+  "vim.scroll": 10,
+  "vim.showMarksInGutter": true,
+  "vim.smartRelativeLine": true,
+  "vim.sneakReplacesF": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vim.startofline": false,
+  "vim.useSystemClipboard": true,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "/Users/lijialin/.config/nvim/vscode.vim",
+  "vim.visualstar": true,
+  "vim.whichwrap": "<,>,h,l,[,]",
+  // which-key
+  "whichkey.delay": 300,
+  "whichkey.bindings": [
+    {
+      "key": "c",
+      "name": "关闭当前标签页",
+      "type": "command",
+      "command": "workbench.action.closeActiveEditor"
+    },
+    {
+      "key": "q",
+      "name": "only",
+      "type": "command",
+      "command": "vim.remap",
+      "args": {
+        "commands": [
+          {
+            "command": ":only"
+          }
+        ]
+      }
+    },
+    {
+      "key": "m",
+      "name": "format",
+      "type": "conditional",
+      "bindings": [
+        // {
+        //   "key": "languageId:wxml;",
+        //   "name": "format wxml",
+        //   "type": "command",
+        //   "command": "miniprogramAssistant.formatWxml"
+        // },
+        {
+          "key": "",
+          "name": "format",
+          "type": "command",
+          "command": "editor.action.formatDocument"
+        }
+      ]
+    },
+    {
+      "key": "f",
+      "name": "搜索文件",
+      "type": "command",
+      "command": "workbench.action.quickOpen"
+    },
+    {
+      "key": "h",
+      "name": "关闭高亮",
+      "type": "command",
+      "command": "vim.remap",
+      "args": {
+        "commands": [
+          {
+            "command": ":nohlsearch"
+          }
+        ]
+      }
+    },
+    {
+      "key": "z",
+      "name": "禅模式",
+      "type": "command",
+      "command": "workbench.action.toggleZenMode"
+    },
+    {
+      "key": "w",
+      "name": "保存文件",
+      "type": "command",
+      "command": "workbench.action.files.save"
+    },
+    {
+      "key": "o",
+      "name": "outline",
+      "type": "command",
+      "command": "workbench.action.gotoSymbol"
+    },
+    {
+      "key": ";",
+      "name": "problems",
+      "type": "command",
+      "command": "workbench.actions.view.problems"
+    },
+    {
+      "key": "e",
+      "name": "toggle explorer",
+      "type": "conditional",
+      "bindings": [
+        {
+          "key": "",
+          "name": "default",
+          "type": "command",
+          "command": "workbench.view.explorer"
+        },
+        {
+          "key": "when:sideBarVisible && explorerViewletVisible",
+          "name": "Hide explorer",
+          "type": "command",
+          "command": "workbench.action.toggleSidebarVisibility"
+        }
+      ]
+    },
+    {
+      "key": "s",
+      "name": "search",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "r",
+          "name": "剪切板",
+          "type": "command",
+          "command": "vim.remap",
+          "args": {
+            "commands": [
+              {
+                "command": ":registers"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "t",
+      "name": "替换",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "d",
+          "name": "div->view",
+          "type": "command",
+          "command": "vim.remap",
+          "args": {
+            "commands": [
+              {
+                "command": ":%s/div/view/g"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "p",
+      "name": "项目管理",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "m",
+          "name": "本窗口打卡",
+          "type": "command",
+          "command": "projectManager.listProjects"
+        },
+        {
+          "key": "n",
+          "name": "新窗口打开",
+          "type": "command",
+          "command": "projectManager.listProjectsNewWindow"
+        },
+        {
+          "key": "h",
+          "name": "历史文件",
+          "type": "command",
+          "command": "workbench.action.openRecent"
+        }
+      ]
+    },
+    {
+      "key": "P",
+      "name": "项目管理",
+      "type": "bindings",
+      "command": "projectManager.listProjects"
+    },
+    {
+      "key": "t",
+      "name": "任务管理",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "s",
+          "name": "终止任务",
+          "type": "command",
+          "command": "workbench.action.tasks.terminate"
+        }
+      ]
+    },
+    {
+      "key": "b",
+      "name": "buffer",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "o",
+          "name": "终止任务",
+          "type": "command",
+          "command": "vim.remap",
+          "args": {
+            "commands": [
+              {
+                "command": ":tabo"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "l",
+      "name": "language",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "k",
+          "name": "上一个错误",
+          "type": "command",
+          "command": "editor.action.marker.prevInFiles",
+        },
+        {
+          "key": "j",
+          "name": "上一个错误",
+          "type": "command",
+          "command": "editor.action.marker.nextInFiles",
+        },
+      ]
+    },
+  ],
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "github.copilot.advanced": {},
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "scss": false,
+    "html": false,
+    "vue": true,
+    "wxml": false
+  },
+  "minapp-vscode.wxmlFormatter": "prettier",
+  "settingsSync.ignoredSettings": [
+    "vim.vimrc.path"
+  ],
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "commentTranslate.source": "Bing",
+  "commentTranslate.targetLanguage": "zh-CN",
+  "markdown-preview-enhanced.previewTheme": "one-dark.css",
+  "html.format.wrapAttributesIndentSize": 2,
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "code-runner.clearPreviousOutput": true,
+  "enableTelemetry": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "editor.selectionHighlight": false,
+  "editor.occurrencesHighlight": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  // "editor.selectionHighlight": false,
+  // "editor.occurrencesHighlight": false,
+}
